@@ -1,30 +1,48 @@
 // Graphic homework
+// 
+#include <iostream>
+#include <string>
+#include <vector>
+#include <list>
 
-namespace CAD{
+namespace CAD
+{
 
 class Node
 {
 public:
-    node();
-    ~node();
-    name();
+    Node(const std::string& name) {mName = name;}
+    ~Node();
+
+    const std::string& name();
 private:
     
-    string mName;
-}
+    std::string mName;
+};
 
-typedef list<node> NodeList;
+typedef std::list<Node> NodeList;
+
 //adjecent list
 class Graph
 {
-pubic:
+public:
     Graph();
     ~Graph();
 
-    dfs();
-    bfs();
+    void addNode(const Node& n);
+    void addNode(const std::string& name);
+    void addEdge(const Node& n1, const Node&2);
+    void dfs();
+    void bfs();
 private:
-    vector<NodeList> mAList;
+    std::vector<NodeList> mAList;
+};
+
 }
 
+
+int main(int argc, char** argv)
+{
+    std::cout << "It's for test\t haha" << std::endl;
+    return 0;
 }
