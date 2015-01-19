@@ -1,0 +1,2 @@
+install:graph.cpp
+	g++ graph.cpp -o t

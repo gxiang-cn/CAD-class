@@ -261,8 +261,6 @@ int main()
     cout << endl;
     g.dfs("A");
     cout << endl;
-    g.dfs("D");
-    cout << endl;
     g.dfs("foo");
 
     return 0;
